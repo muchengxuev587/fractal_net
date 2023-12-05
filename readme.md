@@ -3,4 +3,4 @@
 
 这个网络符合分形原则，无论是在任何scale上都是左一右二的形状，且可以无限递归扩大，这是当时在思考google-net和res-net等网络结构时, 希望在网络深度和宽度取得一定平衡设计的一个有意思的方案.
 
-<img src="fra_onnx.png" width="50%"> 
+<img src="fra_onnx.jpg" width="50%"> 
