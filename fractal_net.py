@@ -1,9 +1,7 @@
-
 import torch
 import torch.nn as nn
 import torch
 import netron
-
 class BasicBlock(nn.Module):
     def __init__(self, inplanes):
         super(BasicBlock, self).__init__()
@@ -37,8 +35,7 @@ class BasicBlock(nn.Module):
         output = self.relu(output)
         return output
 
-class BasicBlock_1(nn.Module):
-    
+class BasicBlock_1(nn.Module): 
     def __init__(self, inplanes):
         super(BasicBlock_1, self).__init__()
         self.plane = int(inplanes/2)
@@ -116,7 +113,6 @@ class Level_f2(nn.Module):
         return output  
     
 class Level_f3(nn.Module):
-
     def __init__(self, inplanes):
         super(Level_f3, self).__init__()
         self.plane = int(inplanes/2) 
@@ -140,7 +136,6 @@ class Level_f3(nn.Module):
         return output  
     
 class Level_f4(nn.Module):
-
     def __init__(self, inplanes):
         super(Level_f4, self).__init__()
         self.plane = int(inplanes/2) 
@@ -164,7 +159,6 @@ class Level_f4(nn.Module):
         return output  
 
 class Level_f5(nn.Module):
-
     def __init__(self, inplanes):
         super(Level_f5, self).__init__()
         self.plane = int(inplanes/2) 
@@ -188,7 +182,6 @@ class Level_f5(nn.Module):
         return output  
 
 class Level_f6(nn.Module):
-
     def __init__(self, inplanes):
         super(Level_f6, self).__init__()
         self.plane = int(inplanes/2) 
@@ -212,7 +205,6 @@ class Level_f6(nn.Module):
         return output  
 
 frac_list = [BasicBlock, Level_f1, Level_f2, Level_f3, Level_f4, Level_f5, Level_f6]
-
 class frac_tree(nn.Module):
     def __init__(self, inplanes, dimension : int, expand=False, downsample=False):
         super(frac_tree, self).__init__()
